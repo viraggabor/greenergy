@@ -22,10 +22,15 @@ def foo(v):
     return new_line
 
 if __name__ == "__main__":
+    
     url='' #enter your url where program should expect the request
     url=input('Enter the URL where program should expect the request: ')
     
-    req=requests.get(url)
+    try:
+       req=requests.get(url)
+    except requests.exceptions.RequestException as e:
+        raise SystemExit(e)    
+    
     req_json=req.json()
     req_json['string']=foo(req_json['string'])
     post_req=requests.post(url,data=req_json)
