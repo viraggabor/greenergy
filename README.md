@@ -12,5 +12,5 @@ conda install pytest
 
 3, Choose pytest, and the working directory of the files
 
-Running the application should be doable with the scripts. First of all you need to build it with the build.sh. After that the docker could be started with the start.sh and could be stopped with the stop.sh file. If those scripts are not working as last resort you can import into any IDE or run with CLI
+Running the application should be doable with the scripts. First of all you need to build it with the build.sh. After that the docker could be started with the start.sh and could be stopped with the stop.sh file. If those scripts are not working as last resort you can import into any IDE or run with CLI. Also all need to be in the same working folder. 
 
